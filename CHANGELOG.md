@@ -16,8 +16,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Added index.html
 
-## [0.3.2]
+## [0.3.2] - 2023-08-13
 
 ### Changed
 
 - Changed index.html
+
+## [0.3.2] - 2023-08-13
+
+### Changed
+
+- Changed index.html
+
+### Added
+
+- Added containers.html
