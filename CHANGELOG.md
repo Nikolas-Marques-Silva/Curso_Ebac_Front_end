@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.1] - 2023-08-12
 
-### Added
+### Removed
 
-- Added nome.txt
+- Removed nome.txt
+- Removed README.md
+
+### Added 
+
+- Added index.html
