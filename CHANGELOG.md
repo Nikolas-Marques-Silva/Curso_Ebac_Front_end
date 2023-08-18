@@ -20,7 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Changed index.html
+- Changed index.html 
 
 ## [0.3.3] - 2023-08-13
 
@@ -28,6 +28,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Changed index.html
 
-### Added
+## Added
 
 - Added containers.html
+
+### [0.3.4] - 2023-08-18
+
+## Added
+
+- Added listas.html
+
+## Changed
+
+- Changed index.html
