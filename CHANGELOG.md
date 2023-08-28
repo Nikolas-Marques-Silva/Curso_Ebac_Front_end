@@ -61,3 +61,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Changed
 
 - Changed index.html
+
+### [0.3.7] - 2023-08-28
+
+## Added
+
+- Added media.html
+
+## Changed
+
+- Changed index.html
