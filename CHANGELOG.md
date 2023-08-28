@@ -42,4 +42,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Changed index.html
 
-htm
+### [0.3.5] - 2023-08-28 
+
+## Added
+
+- Added tabelas.html
+
+## Changed
+
+- Changed index.html
