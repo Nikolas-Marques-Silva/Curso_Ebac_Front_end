@@ -4,18 +4,25 @@
     padding: 0;
 }
 
-h1 {
-    color: #f00;
+header li {
+    display: inline;
 }
 
-h2 {
-    color: #0f0;
+.container {
+    width: 1360px;
+    margin: 0 auto;
 }
 
-#economy h2 {
-    color: gold;
+.articles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
-.creation-date {
-    color: #ccc;
+.articles article {
+    width: 30%;
+}
+
+.articles article img {
+    height: 100px;
 }
