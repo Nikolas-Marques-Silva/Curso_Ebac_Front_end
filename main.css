@@ -12,13 +12,16 @@ body>header {
 
 header .container {
     display: flex;
-
     align-items: center;
     justify-content: space-between;
 }
 
 header li {
     display: inline;
+    text-decoration: none;
+    font: sans-serif;
+    font-weight: 700;
+    margin-left: 16px;
 }
 
 header li a {
@@ -63,4 +66,40 @@ section h2,
     color: #fff;
     padding: 8px;
     display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font: sans-serif;
+}
+
+.articles article h3 {
+    font: 24px sans-serif;
+}
+
+section h2 {
+    font: 32px sans-serif;
+}
+
+#sports {
+    background-color: green;
+}
+
+.articles article a {
+    background-color: lightgreen;
+}
+
+#economy {
+    background-color: yellowgreen;
+}
+
+.articles article a {
+    background-color: orangered;
 }
