@@ -92,7 +92,7 @@ section h2 {
     background-color: green;
 }
 
-.articles article a {
+#sports .articles article a {
     background-color: lightgreen;
 }
 
@@ -100,6 +100,22 @@ section h2 {
     background-color: yellowgreen;
 }
 
-.articles article a {
+#economy .articles article a {
     background-color: orangered;
+}
+
+#enterteriment {
+    background-color: pink;
+}
+
+#enterteriment .articles article a {
+    background-color: lightblue;
+}
+
+#tecnology {
+    background-color: lightgrey;
+}
+
+#tecnology .articles article a {
+    background-color: darkred;
 }
