@@ -35,7 +35,7 @@ nomeBeneficiario.addEventListener('keyup', function(event) {
 
     if (!formValido) {
         nomeBeneficiario.classList.add('error')
-        document.querySelector('.error-message').style.display = 'block';
+        document.querySelector('.error-message').style.display = 'none';
     } else {
         nomeBeneficiario.classList.remove('error')
         document.querySelector('.error-message').style.display = 'none';
