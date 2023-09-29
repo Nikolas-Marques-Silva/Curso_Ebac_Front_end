@@ -1,3 +1,5 @@
 $(document).ready(function() {
-    alert("Olá jQuery!")
+    $('form').on('submit', function(e) {
+        e.preventDefault()
+    })
 })
