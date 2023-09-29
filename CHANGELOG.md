@@ -20,3 +20,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 	- foto3.jpg
 	- foto4.jpg
 	- foto5.jpg
+
+## [1.1.2] - 2023-09-29
+
+### Changed
+
+- main.js
