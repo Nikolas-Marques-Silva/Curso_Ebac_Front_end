@@ -1,69 +1,50 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Rowdies', cursive;
-
+    font-family: Roboto;
 }
 
-body {
-    background-color: #a3c9b2;
+header {
+    background-color: #5f27cd;
+    padding: 16px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    border-bottom: 16px solid #341f97;
+    text-transform: uppercase;
+    font-style: italic;
 }
 
-.container {
-    margin: 80px auto;
-    max-width: 640px;
-    width: 100%;
+header button {
+    margin-left: 16px;
 }
 
 form {
-    margin-top: 40px;
+    background-color: #c8d6e5;
+    padding: 24px 0;
+    text-align: center;
+}
+
+form h2 {
+    margin-bottom: 16px;
 }
 
 input,
-textarea,
 button {
-    display: block;
     padding: 8px;
-    margin-bottom: 8px;
-    width: 100%;
-    resize: none;
-    outline-color: #196338;
 }
 
 button {
-    background-color: #196338;
+    background-color: #009432;
     border: none;
-    text-transform: uppercase;
-    color: #00ff55;
-    font-weight: lighter;
-    font-size: 18px;
-    font-style: normal;
     cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    color: #fff;
 }
 
-button:hover {
-    background-color: #27ae60;
-}
-
-.success-message {
-    background-color: #27ae60;
-    padding: 16px;
-    color: #0a2716;
-    display: none;
-}
-
-.error-message {
-    font-size: 12px;
-    padding: 8px;
+#cancelButton {
     background-color: red;
-    color: white;
-    margin-bottom: 8px;
-    display: none;
-}
-
-input.error {
-    color: red;
-    border-color: red;
-    outline-color: red;
 }

@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML com JS</title>
-    <link rel="stylesheet" href="style.css">
+    <title>jQuery</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <h1>EBAC Banking</h1>
-        <h2>Dépósitos</h2>
-        <form id="form-deposito">
-            <input type="text" name="" id="nome-beneficiario" required placeholder="Nome completo do beneficiário">
-            <p class="error-message">O nome precisa ser completo</p>
-            <input type="number" name="" id="numero-conta" required placeholder="Número da conta">
-            <input type="number" name="" id="valor-deposito" required placeholder="Valor">
-            <textarea name="" id="descricao" cols="30" rows="10" placeholder="Descrição (opcional)"></textarea>
-            <button id="btn-depositar" type="submit">Depositar</button>
-        </form>
-        <p class="success-message"></p>
-    </div>
-    <script src="./main.js"></script>
+    <header>
+        <h1>Galeria de fotos</h1>
+        <button type="submit">Nova imagem +</button>
+    </header>
+    <form action="">
+        <h2>Inserir nova imagem</h2>
+        <input type="url" name="" id="" required placeholder="URL da Imagem">
+        <button type="submit">Adicionar</button>
+        <button type="reset" id="cancelButton">Cancelar</button>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
