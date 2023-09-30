@@ -1,20 +1,32 @@
 $(document).ready(function() {
-    $('header button').click(function() {
-        $('form').slideDown()
-    })
+    $('form').on('submit', function(event) {
+        event.preventDefault()
 
-    $('#cancelButton').click(function() {
-        $('form').slideUp()
-    })
+        const tarefa = $('#tarefa').val()
 
-    $('form').on('submit', function(e) {
-        e.preventDefault()
-        const enderecoImagem = $('enderecoImagem').val()
-        const novoItem = $('<li style="display: none"></li>')
-        $(`<img src="${enderecoImagem}">`).appendTo(novoItem)
-        $(`<div class="overlayLinkImagem"><a href="${enderecoImagem}" target="_blank" title="Ver imagem em tamanho real">Ver imagem em tamanho real</a></div>`).appendTo(novoItem)
-        $(novoItem).appendTo('ul')
-        $(novoItem).fadeIn(1000);
-        $(enderecoImagem).val('')
+        if (tarefa !== '') {
+            let novoItem = $('<li style="display: none"></li>')
+            let link = $(`<a>${tarefa}</a>`)
+            link.appendTo(novoItem)
+            novoItem.appendTo('ul')
+
+            novoItem.fadeIn(1000)
+
+            $('#tarefa').val('')
+
+            link.click(function() {
+                novoItem.fadeOut()
+
+                const conteudoA = link.text()
+                let conteudoTracado = $('<li style="display: none"></li>')
+                let linkTracado = $('<a style="text-decoration: line-through"></a>').text(conteudoA)
+                linkTracado.appendTo(conteudoTracado)
+                conteudoTracado.appendTo('ul')
+
+                conteudoTracado.fadeIn(1000)
+            })
+        } else {
+            alert('Você precisa preencher este campo!')
+        }
     })
 })
