@@ -7,3 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.1] - 2023-10-02
+
+### Added
+
+- index.html
+- style.css
+- main.js
+- imagens-icones folder
+	- icones folder
+		- facebook.png
+		- instagram.png
+		- youtube.png
+	- images folder
+		- carro-nmw.png
+		- fusca.png
+		- loja.png
+		- moto-bmw.png
+		- slide1.png
+		- slide2.png
+		- slide3.png
+- slick.css
+- slick-theme.css
+- slick.min.js
