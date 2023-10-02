@@ -22,7 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 	- images folder
 		- carro-nmw.png
 		- fusca.png
-		- loja.png
+		- loja.jpg
 		- moto-bmw.png
 		- slide1.png
 		- slide2.png
