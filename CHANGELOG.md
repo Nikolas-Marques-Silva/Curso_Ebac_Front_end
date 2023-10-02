@@ -7,36 +7,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.1.1] - 2023-09-29
-
-### Added
-
-- index.html
-- style.css
-- main.js
-- images folder 
-	- foto1.jpg
-	- foto2.jpg
-	- foto3.jpg
-	- foto4.jpg
-	- foto5.jpg
-
-## [1.1.2] - 2023-09-29
-
-### Changed
-
-- main.js
-
-## [1.1.3] - 2023-09-29
-
-### Changed
-
-- main.js
-
-## [1.1.4] - 2023-09-30
-
-### Changed
-
-- index.html
-- style.css
-- main.js

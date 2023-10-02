@@ -1,50 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jQuery</title>
+    <title>EBAC Motors</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick-theme.css">
 </head>
 
 <body>
     <header>
-        <h1>Galeria de fotos</h1>
-        <button type="submit">Nova imagem +</button>
+        <div class="container">
+            <h1>Ebac Motors</h1>
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Em destaque</a></li>
+                    <li><a href="#">Promoções</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <form action="">
-        <h2>Inserir nova imagem</h2>
-        <input type="url" name="" id="enderecoImagem" required placeholder="URL da Imagem">
-        <button type="submit">Adicionar</button>
-        <button type="reset" id="cancelButton">Cancelar</button>
-    </form>
-    <ul>
-        <li>
-            <img src="./images/foto1.jpg" alt="Pintura de um gato">
-            <div class="overlayLinkImagem"><a href="" hrf="./images/foto1.jpg" target="_blank" title="Ver a imagem em tamanho real">Ver a imagem em tamanho real</a></div>
-        </li>
-        <li>
-            <img src="./images/foto2.jpg" alt="Flamingo">
-            <div class="overlayLinkImagem"><a href="" hrf="./images/foto2.jpg" target="_blank" title="Ver a imagem em tamanho real">Ver a imagem em tamanho real</a></div>
-        </li>
-        <li>
-            <img src="./images/foto3.jpg" alt="Cachorros enrolados em um pano">
-            <div class="overlayLinkImagem"><a href="" hrf="./images/foto3.jpg" target="_blank" title="Ver a imagem em tamanho real">Ver a imagem em tamanho real</a></div>
-        </li>
-        <li>
-            <img src="./images/foto4.jpg" alt="Abelha pousando em flor">
-            <div class="overlayLinkImagem"><a href="" hrf="./images/foto4.jpg" target="_blank" title="Ver a imagem em tamanho real">Ver a imagem em tamanho real</a></div>
-        </li>
-        <li>
-            <img src="./images/foto5.jpg" alt="Flor encharcada">
-            <div class="overlayLinkImagem"><a href="" hrf="./images/foto5.jpg" target="_blank" title="Ver a imagem em tamanho real">Ver a imagem em tamanho real</a></div>
-        </li>
-    </ul>
+    <div id="carousel">
+        <img src="./imagens-icones/images/slide1.png" alt="Carro da Porsche">
+        <img src="./imagens-icones/images/slide2.png" alt="Carro da BMW">
+        <img src="./imagens-icones/images/slide3.png" alt="Carro da Ford">
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./slick.min.js"></script>
     <script src="main.js"></script>
 </body>
 
