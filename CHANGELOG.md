@@ -62,3 +62,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - main.js
+
+## [0.0.6] - 2023=10-07
+
+### Added
+
+- cadastro.html
+- cadastro.js
+
+### Changed
+
+- index.html
