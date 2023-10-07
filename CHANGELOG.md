@@ -44,3 +44,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - index.html
 - style.css
+
+## [0.0.4] - 2023-10-07
+
+### Added
+
+- jquery.mask.min.js
+- jquery.validate.min.js
+- messages_pt_BR.min.js
+
+### Changed
+
+- main.js
