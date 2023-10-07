@@ -23,7 +23,7 @@ footer {
 }
 
 header {
-    position: stick;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 1;
@@ -154,7 +154,7 @@ button {
     height: 120px;
 }
 
-.form button {
+form button {
     max-width: 120px;
 }
 
