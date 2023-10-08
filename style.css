@@ -1,12 +1,8 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Roboto';
-}
-
-html {
-    overflow-x: hidden;
 }
 
 .container {
@@ -15,154 +11,47 @@ html {
     margin: 0 auto;
 }
 
-header,
-footer {
-    background-color: #192a56;
-    padding-top: 16px;
-    color: #fff;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    padding: 16px 0 0;
+    border-bottom: 1px solid #ccc;
 }
 
-header>.container,
-footer>.container {
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 16px;
-}
-
-nav {
-    background-color: #575fcf;
-    padding: 16px 0;
+.submenu {
     display: none;
+    border: 1px solid red;
+    position: absolute;
+    left: 0;
+    max-width: 300px;
+    top: 100%;
 }
 
-nav li {
+.menu>li {
+    float: left;
     list-style: none;
-    display: inline;
-    margin-right: 16px;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
+    padding: 16px;
+    border-top: 1px solid transparent;
+    position: relative;
 }
 
-nav li a {
-    color: #fff;
-    text-decoration: none;
+.clear {
+    clear: both;
 }
 
-.menu-hamburguer {
-    width: 32px;
-    cursor: pointer;
-}
-
-.menu-hamburguer span {
-    height: 2px;
-    width: 100%;
-    background-color: #fff;
-    display: block;
-    margin-bottom: 4px;
-}
-
-.container-flex {
-    display: flex;
-}
-
-#sobreALoja img {
-    max-width: 400px;
-    margin-right: 24px;
-}
-
-section {
-    padding: 48px 0;
-}
-
-section h2 {
-    margin-bottom: 16px;
-}
-
-.lista-veiculos {
-    flex-wrap: wrap;
-}
-
-.lista-veiculos li {
-    list-style: none;
-    max-width: 30%;
-    margin-bottom: 24px;
-}
-
-.lista-veiculos li img {
-    max-width: 100%;
-}
-
-.lista-veiculos li h3 {
-    margin: 16px 0;
-}
-
-button {
-    display: block;
-    width: 100%;
-    padding: 8px 0;
-    border: none;
-    background-color: #119759;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    font-style: italic;
-    cursor: pointer;
-    border-radius: 6px;
-}
-
-.price {
-    margin: 16px 0;
+.menu li:hover .submenu {
     display: block;
 }
 
-.price del {
-    color: #ccc;
-    font-size: 14px;
+.menu li:hover {
+    border-color: red;
 }
 
-.item-central {
-    margin: 0 5%;
-}
-
-.form {
-    margin-bottom: 16px;
-    max-width: 360px;
-}
-
-.form label {
-    font-weight: bold;
-    display: block;
-}
-
-.form input,
-.form textarea {
-    width: 100%;
+.submenu li {
     display: block;
     padding: 8px;
-}
-
-.form textarea {
-    resize: none;
-    height: 120px;
-}
-
-form button {
-    max-width: 120px;
-}
-
-footer li {
-    list-style: none;
-    margin-left: 16px;
-}
-
-footer img {
-    height: 32px;
 }
