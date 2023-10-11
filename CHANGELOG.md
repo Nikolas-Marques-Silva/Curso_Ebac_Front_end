@@ -7,27 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.0.1] - 2023-10-08
+## [0.0.1] - 2023-10-10
 
 ### Added
 
 - index.html
 - style.css
-
-## [0.0.2] - 2023-10-08
-
-### Changed
-
-- index.html
-- style.css
-
-## [0.0.3] - 2023-10-10
-
-### Added 
-
-- main.js
-
-### Changed
-
-- index.html
-- style.css
+- immages folder
+	- 4queijos.png
+	- fachada.jpg
+	- frango.jpg
+	- marquerita.jpg
+	- pepperoni.png
