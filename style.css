@@ -78,3 +78,55 @@ section>.container {
     border-radius: 5px;
     margin: 8px;
 }
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    section>.container {
+        grid-template-columns: 100%;
+    }
+
+    .container img {
+        margin-left: 16px;
+    }
+
+    header h1, nav ul li a {
+        margin: 0 8px;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 49%);
+        margin: 8px;
+    }
+
+    .produto button {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    section>.container {
+        grid-template-columns: 100%;
+    }
+
+    .container img {
+        margin-left: 16px;
+    }
+
+    header h1, nav ul li a {
+        margin: 0 8px;
+    }
+
+    .produtos {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, 24%);
+        margin: 8px;
+        gap: 5%;
+    }
+
+    .produto button {
+        width: 90%; 
+    }
+    header {
+        font-size: 1em;
+        padding: 8px;
+    }
+}
