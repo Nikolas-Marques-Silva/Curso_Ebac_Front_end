@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Untitled</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link href="./lib/bootstrap.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">
+            You are using an <strong>outdated</strong> browser. Please
+            <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+            your experience.
+            </p>
+        <![endif]-->
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mainModal">Abrir modal</button>
+        <div class="modal" id="mainModal" data-bs-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Título da modal</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci porta non pulvinar. Fermentum, odio eu feugiat pretium, nibh ipsum consequat nisl, vel pretium lectus quam id leo in vitae!
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cancelar</button>
+                        <button class="btn btn-success" type="button" data-bs-dismiss="modal">Confirmar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./lib/bootstrap.min.js"></script>
+        <script type="text/javascript">
+         document.addEventListener('DOMContentLoaded', function() {
+             const mainModal = new bootstrap.Modal('#mainModal')
+             setTimeout(function() {
+                 mainModal.show()
+             }, 3000)
+         })
+        </script>
+
+        
+    </body>
+</html>
