@@ -27,3 +27,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - dropdown.html
+
+## [0.0.4] - 2023-10-16
+
+### Added
+
+- modal.html
