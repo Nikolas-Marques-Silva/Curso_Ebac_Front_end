@@ -33,3 +33,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - modal.html
+
+## [0.0.5] - 2023-10-16
+
+### Added
+
+- navbar.html
