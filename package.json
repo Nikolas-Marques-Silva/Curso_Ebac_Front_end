@@ -2,9 +2,9 @@
   "name": "curso_ebac_fronted",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "sass": "sass source/style.scss build/style.css",
+    "sass": "sass source/style.scss build/style.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
