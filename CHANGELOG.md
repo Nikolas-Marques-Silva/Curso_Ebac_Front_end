@@ -16,3 +16,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Um título com um botão utilizando variaveis sass
+
+## [0.0.3] - 2023-11-08
+
+### Changed
+
+- O botão agora é diversos sub-títulos
