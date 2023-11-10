@@ -28,3 +28,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Formulário newsletter adicionado
+
+## [0.0.5] - 2023-11-10
+
+### Added
+
+- Pequeno melhoramento no layout
+- Versão mobile

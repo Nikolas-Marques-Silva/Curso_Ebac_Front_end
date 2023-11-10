@@ -1,45 +1,17 @@
-body {
-  background-color: #eee;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 79 | @media screen and (max-width: variables.$mobile) {
+ *    |                               ^^^^^^^^^^^^^^^^^
+ *    '
+ *   source/style.scss 79:31  root stylesheet */
 
-.container {
-  max-width: 1024px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-header {
-  padding: 16px 0;
-  background-color: #0ff;
-  text-align: center;
-}
-
-.form-container {
-  height: calc(100vh - 70px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.form-container form {
-  width: 100%;
-  max-width: 480px;
-  margin-top: 40px;
-}
-.form-container form input {
-  padding: 8px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  width: 100%;
-  margin-bottom: 16px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #000;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 79 \2502  @media screen and (max-width: variables.$mobile) {\a    \2502                                ^^^^^^^^^^^^^^^^^\a    \2575 \a   source/style.scss 79:31  root stylesheet";
 }
-.form-container form button {
-  padding: 8px;
-  display: block;
-  width: 100%;
-  margin-bottom: 16px;
-}
-
-/*# sourceMappingURL=style.css.map */
