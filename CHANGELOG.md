@@ -22,3 +22,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - O botão agora é diversos sub-títulos
+
+## [0.0.4] - 2023-11-10
+
+### Changed
+
+- Formulário newsletter adicionado
