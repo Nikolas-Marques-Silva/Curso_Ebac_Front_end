@@ -1,20 +1,12 @@
 @use 'config/reset';
 @use 'config/variables';
-@use 'sass:math';
-
-@mixin elementoForm($margin: 16px) {
-    padding: 8px;
-    display: block;
-    width: 100%;
-    margin-bottom: $margin;
-}
-
-@function pixelToEm($alvo, $contexto: 16px) {
-    @return math.div($alvo, $contexto)+em;
-}
 
 body {
-    background-color: variables.$corDeFundo
+    background-color: variables.$corDeFundo;
+}
+
+li {
+    list-style: none;
 }
 
 .container {
@@ -24,60 +16,85 @@ body {
 }
 
 header {
-    padding: 16px 0;
     background-color: variables.$corPrincipal;
-    text-align: center;
-    color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
 }
 
-.form-container {
-    height: calc(100vh - 70px);
+.menu {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 760px;
 
-    h2 {
-        font-size: pixelToEm(48px);
-        text-align: center;
+    li {
+        font-weight: bold;
+        margin-left: 24px;
+
+        a {
+        color: #fff;
+        text-decoration: none;
+        }
+    }
+}
+
+
+section {
+    padding: 56px 0;
+}
+
+.products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    gap: 4%; //row-gap foi substituido, tornando-o absoleto
+    width: 100%;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.product-button {
+    display: block;
+    background-color: variables.$corSecundaria;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: lighten(variables.$corSecundaria, 15%);
+    }
+}
+
+
+@media screen and (max-width: variables.$tablet) {
+    .container {
+        max-width: 80%;
     }
 
-    form {
-        width: 100%;
-        max-width: 480px;
-        margin-top: 40px;
-
-        label {
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        input {
-            @include elementoForm();
-            background-color: transparent;
-            border: none;
-            border-bottom: 3px solid variables.$corPrincipal;
-        }
-
-        button {
-            @include elementoForm();
-            background-color: variables.$corSecundaria;
-            border: none;
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-            color: #fff;
-
-            &:hover {
-                background-color: darken(variables.$corSecundaria, 15%);
-            }
-        }
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
     }
 }
 
 @media screen and (max-width: variables.$mobile) {
-    .container {
-        max-width: 80%;
+    .products {
+        display: block;
+    }
+
+    .product-item  {
+        margin-bottom: 32px;
     }
 }
