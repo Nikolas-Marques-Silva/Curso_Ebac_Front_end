@@ -1,8 +1,21 @@
 {
-  "devDependencies": {
-    "gulp": "^4.0.2"
-  },
+  "name": "curso_ebac_fronted",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.69.5"
   }
 }
