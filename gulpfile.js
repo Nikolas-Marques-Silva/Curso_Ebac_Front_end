@@ -1,7 +1,22 @@
 const gulp = require('gulp')
 const sass = require('gulp-sass')(require('sass'))
 const sourcemaps = require('gulp-sourcemaps')
+const uglify = require('gulp-uglify')
+const obfuscate = require('gulp-obfuscate')
+const imagemin = require('gulp-imagemin')
 
+function comprimeImg() {
+  return gulp.src('./source/images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./build/images'))
+}
+
+function compilaJS() {
+  return gulp.src('./source/scripts/*.js')
+    .pipe(uglify())
+    .pipe(obfuscate())
+    .pipe(gulp.dest('./build/scripts'))
+}
 
 function compilaSass() {
   return gulp.src('./source/styles/main.scss')
@@ -13,28 +28,8 @@ function compilaSass() {
     .pipe(gulp.dest('./build/styles'))
 }
 
-function funcaoPadrao(callback) {
-  setTimeout(() => {
-    console.log('Executando via gulp:')
-    callback()
-  }, 1000);
-}
-
-function dizOI(callback) {
-  setTimeout(() => {
-    console.log('Olá Gulp')
-    dizTchau()
-    callback()
-  }, 2000);
-}
-
-function dizTchau() {
-  console.log('Tchau Gulp')
-}
-
-exports.default = gulp.parallel(funcaoPadrao, dizOI)
-exports.dizOI = dizOI
-exports.sass = compilaSass
-exports.watch = function() {
+exports.default = function() {
   gulp.watch('./source/styles/*.scss', {ignoreInitial: false}, gulp.series(compilaSass))
+  gulp.watch('./source/scripts/*.js', {ignoreInitial: false}, gulp.series(compilaJS))
+  gulp.watch('./source/images/*', {ignoreInitial: false}, gulp.series(comprimeImg))
 }
