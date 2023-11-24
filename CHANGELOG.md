@@ -14,3 +14,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.2] - 2023-11-21
 
 - Agora o código sass é compilado automáticamente via gulp
+
+
+## [0.0.3] - 2023-11-24
+
+### Added
+
+- Compressão de imagens por gulp-imagemin
+- Compressão e ofuscação dos arquivos .js pelo gulp-uglify
+- Compilação dos arquivos SASS por gulp-sass
+- Indicação do arquivo SASS por meio do gulp-sourcemaps
