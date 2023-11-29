@@ -1,6 +1,6 @@
 @import "maps.less";
-@breakpointTablet: ~"screen and (max-width: 1024px) and (min-width: 677px)";
-@breakpointMobile: ~"screen and (max-width: 676px)";
+@breakpointTablet: ~"(max-width: 1024px) and (min-width: 677px)";
+@breakpointMobile: ~"(max-width: 676px)";
 
 * {
   margin: 0;
@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #colors[backgroundColor];
+  background-color: #colors[backgroundcolor];
 }
 
 li {
@@ -24,7 +24,7 @@ li {
 }
 
 header {
-  background-color: #colors[headerColor];
+  background-color: #colors[headercolor];
   position: sticky;
   top: 0;
   left: 0;
@@ -67,7 +67,7 @@ section {
 
 .product-button {
   display: block;
-  background-color: #colors[PrimaryColor];
+  background-color: #colors[primarycolor];
   color: #fff;
   text-align: center;
   padding: 8px 0;
@@ -76,7 +76,7 @@ section {
   text-decoration: none;
 
   &:hover {
-    background-color: #colors[SecondaryColor];
+    background-color: #colors[secondarycolor];
   }
 }
 
