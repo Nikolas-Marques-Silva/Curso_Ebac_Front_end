@@ -11,10 +11,18 @@ body {
   color: #colors[textColor];
 }
 
+li {
+  list-style: none;
+}
+
 .container {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @media @breakpointTablet {
     max-width: 80%;
@@ -26,8 +34,6 @@ body {
 }
 
 header {
-  padding: 24px;
-
   .profileAvatar {
     display: block;
     margin: 0 auto 24px;
@@ -60,12 +66,32 @@ header {
   width: 100%;
   margin: 0 auto;
 
-  li {
-    list-style: none;
+  &:hover {
+    transition: all ease 0.3s;
+    transform: scale(1.3);
+  }
+}
 
-    &:hover {
-      transition: all ease .3s;
-      transform: scale(1.3);
+.projectsList {
+  margin-top: 32px;
+  &Item {
+    a {
+      text-decoration: none;
+      background-color: #colors[buttonColor];
+      display: block;
+      padding: 16px 24px;
+      margin-bottom: 16px;
+      text-align: center;
+      color: #colors[textColor];
+      font-weight: bold;
+      border-radius: 30px;
+      border: 2px solid #colors[buttonColor];
+      transition: all ease 0.5s;
+
+      &:hover {
+        color: #colors[buttonColor];
+        background-color: transparent;
+      }
     }
   }
 }
