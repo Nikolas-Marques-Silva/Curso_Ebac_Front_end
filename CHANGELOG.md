@@ -16,3 +16,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Agora os arquivos SASS & LESS são compilados com o grunt
+
+## [0.0.3] - 2023-12-04
+
+### Added 
+
+- Agora todas as tarefas do grunt são executadas de forma paralela
