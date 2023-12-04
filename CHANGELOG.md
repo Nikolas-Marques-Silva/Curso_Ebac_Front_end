@@ -22,3 +22,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added 
 
 - Agora todas as tarefas do grunt são executadas de forma paralela
+
+## [0.0.4] - 2023-12-04
+
+### Added
+
+- Organização do projeto
+- base do projeto
