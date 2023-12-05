@@ -35,3 +35,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Agora o grunt observa por alterações nos arquivos LESS
+
+## [0.0.6] - 2023-12-05
+
+### Added
+
+- Task build completa
+- task dev agora observa o html
+- Agora temos a minificação dos arquivos css
+- Agora os src do arquivo html são substituidos de acordo com o ambiente
