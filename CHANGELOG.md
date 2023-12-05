@@ -44,3 +44,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - task dev agora observa o html
 - Agora temos a minificação dos arquivos css
 - Agora os src do arquivo html são substituidos de acordo com o ambiente
+
+## [0.1.0] - 2023-12-05
+
+### Added
+
+- Gerador de números completo
