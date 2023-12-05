@@ -29,3 +29,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Organização do projeto
 - base do projeto
+
+## [0.0.5] - 2023-12-05
+
+### Added
+
+- Agora o grunt observa por alterações nos arquivos LESS
