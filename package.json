@@ -1,28 +1,11 @@
 {
-  "homepage": "https://Nikolas-M-Silva.github.io/Curso_Ebac_Front_end",
   "name": "curso_ebac_fronted",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "grunt": "grunt",
-    "build": "grunt build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "gh-pages": "^6.1.0",
-    "grunt": "^1.6.1",
-    "grunt-concurrent": "^3.0.0",
-    "grunt-contrib-clean": "^2.0.1",
-    "grunt-contrib-htmlmin": "^3.1.0",
-    "grunt-contrib-less": "^3.0.0",
-    "grunt-contrib-sass": "^2.0.0",
-    "grunt-contrib-uglify": "^5.2.2",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-replace": "^2.0.2"
-  }
+  "license": "ISC"
 }
