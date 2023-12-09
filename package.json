@@ -1,11 +1,15 @@
 {
   "name": "curso_ebac_fronted",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass ./bem/main.scss ./bem/main.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
 }

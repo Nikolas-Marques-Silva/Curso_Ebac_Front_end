@@ -1,18 +1,16 @@
 /* Documento seguindo a metodologia BEM */
-
 .form {
   margin: 40px;
 }
-
 .form__control {
   margin-bottom: 16px;
   font-family: sans-serif;
 }
-
 .form__submit {
   cursor: pointer;
 }
-
 .form__submit--sending {
   cursor: wait;
 }
+
+/*# sourceMappingURL=main.css.map */
