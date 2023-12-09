@@ -12,3 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Aplicação do sistema SMACSS 
 - Base do projeto
 - Aplicação de diferentes temas do projeto
+
+## [0.0.2] - 2023-12-09
+
+### Changed
+
+- Agora estudamos a metodologia css BEM
