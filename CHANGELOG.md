@@ -25,4 +25,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- correção no cabeçalho do segundo e-mail
+- Cabeçalho do segundo e-mail agora tem o alinhamento corrigido
+
+## [0.0.4] - 2023-12-11
+
+### Added
+
+- Quarto e-mail sobre recomendações de produtos
+
+### Fixed
+
+- Logo da EBAC Shoes aparece agora
