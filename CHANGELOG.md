@@ -16,3 +16,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Segundo e-mail sobre redefinição de senha
+
+## [0.0.3] - 2023-12-11
+
+### Added 
+
+- Terceiro e-mail sobre o recebimmento de um produto
+
+### Fixed
+
+- correção no cabeçalho do segundo e-mail
