@@ -10,3 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Layout de um e-mail sobre uma transferência de dinheiro
+
+## [0.0.2] - 2023-12-11
+
+### Added
+
+- Segundo e-mail sobre redefinição de senha
