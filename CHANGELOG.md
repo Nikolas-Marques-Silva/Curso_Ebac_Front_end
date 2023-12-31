@@ -15,4 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Tratamento de erros ocasionados ao processo de se comunicar com a api, agora temos um feedback ao usuário 
+- Tratamento de erros ocasionados ao processo de se comunicar com a api, agora temos um feedback ao usuário
+
+## [0.0.3] - 2023-12-31
+
+### Added
+
+- O formulário realiza uma validação caso o usuário não digite o seu nome
