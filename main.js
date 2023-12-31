@@ -9,19 +9,20 @@ $(document).ready(() => {
         $(botao).find('i').addClass('d-none');
         $(botao).find('.spinner-border').removeClass('d-none');
 
-        $.ajax(url).done((data) => {
-            const logradouro = data.logradouro;
-            const bairro = data.bairro;
-            const localidade = data.localidade;
-            const estado = data.uf;
-            const endereco = `${logradouro}, ${bairro} - ${localidade} - ${estado}`;
+        fetch(url)
+        .then(response => {
+            return response.json();
+        })
+        .then(data => {
+            const {logradouro, bairro, localidade, uf} = data;
+            const endereco = `${logradouro}, ${bairro}, ${localidade} - ${uf}`;
 
             $("#endereco").val(endereco);
 
             setTimeout(() => {
-                $(botao).find('.spinner-border').addClass('d-none');
                 $(botao).find('i').removeClass('d-none');
-            }, 2000);
+                $(botao).find('.spinner-border').addClass('d-none');
+            }, 2000)
         })
     })
 })
