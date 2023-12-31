@@ -10,3 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Formulário com CEP automático
+
+## [0.0.2] - 2023-12-31
+
+### Added
+
+- Tratamento de erros ocasionados ao processo de se comunicar com a api, agora temos um feedback ao usuário 
