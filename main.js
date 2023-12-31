@@ -27,4 +27,12 @@ $(document).ready(() => {
             $(botao).find('.spinner-border').addClass('d-none');
         })
     })
+
+    $("#form-request").submit((event) => {
+        event.preventDefault();
+        
+        if ($("#nome").val().length == 0) {
+            throw new Error("Por favor, informe o seu nome.")
+        }
+    })
 })
