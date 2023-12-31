@@ -18,11 +18,13 @@ $(document).ready(() => {
             const endereco = `${logradouro}, ${bairro}, ${localidade} - ${uf}`;
 
             $("#endereco").val(endereco);
-
-            setTimeout(() => {
-                $(botao).find('i').removeClass('d-none');
-                $(botao).find('.spinner-border').addClass('d-none');
-            }, 2000)
+        })
+        .catch(error => {
+            alert("Ocorreu um erro. Verifique o CEP e tente novamente mais tarde.")
+        })
+        .finally(() => {
+            $(botao).find('i').removeClass('d-none');
+            $(botao).find('.spinner-border').addClass('d-none');
         })
     })
 })
