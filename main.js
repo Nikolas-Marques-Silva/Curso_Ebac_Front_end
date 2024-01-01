@@ -1,38 +1,21 @@
 $(document).ready(() => {
-    $("#cep").mask("99999-999");
+    const name = $('#name');
+    const username = $('#username');
+    const avatar = $('#avatar');
+    const repos = $('#repos');
+    const followers = $('#followers');
+    const following = $('#following');
+    const profile = $('#profile-link');
 
-    $("#btn-cep").click(() => {
-        const cep = $("#cep").val();
-        const url = `https://viacep.com.br/ws/${cep}/json/`;
-        const botao = $("#btn-cep");
-
-        $(botao).find('i').addClass('d-none');
-        $(botao).find('.spinner-border').removeClass('d-none');
-
-        fetch(url)
-        .then(response => {
-            return response.json();
-        })
+    fetch('https://api.github.com/users/Nikolas-Marques-Silva')
+        .then(response => response.json())
         .then(data => {
-            const {logradouro, bairro, localidade, uf} = data;
-            const endereco = `${logradouro}, ${bairro}, ${localidade} - ${uf}`;
-
-            $("#endereco").val(endereco);
+            name.text(data.name);
+            username.text(data.login);
+            avatar.attr('src', data.avatar_url);
+            repos.text(data.public_repos);
+            followers.text(data.followers);
+            following.text(data.following);
+            profile.attr('href', data.html_url);
         })
-        .catch(error => {
-            alert("Ocorreu um erro. Verifique o CEP e tente novamente mais tarde.")
-        })
-        .finally(() => {
-            $(botao).find('i').removeClass('d-none');
-            $(botao).find('.spinner-border').addClass('d-none');
-        })
-    })
-
-    $("#form-request").submit((event) => {
-        event.preventDefault();
-        
-        if ($("#nome").val().length == 0) {
-            throw new Error("Por favor, informe o seu nome.")
-        }
-    })
 })
