@@ -8,7 +8,17 @@ function Pessoa(nome, sobrenome) {
 
 function Funcionario (nome, sobrenome, cargo, salorio) {
     this.cargo = cargo
-    this.salario = salorio
+    let _salario = salorio
+
+    this.getSalario = () => {
+        return _salario
+    }
+
+    this.setSalario = (salario) => {
+        if (typeof salario === 'number') {
+            _salario = salario
+        }
+    }
 
     this.dizCargo = () => {
         console.log(`Eu trabalho como ${this.cargo}`)
@@ -22,4 +32,6 @@ const funcionario1 = new Funcionario('Maria', 'Silva', 'Desenvolvedora', 2000)
 funcionario1.dizOi()
 funcionario1.dizCargo()
 
-console.log(funcionario1)
+funcionario1.setSalario(2500)
+
+console.log(funcionario1.getSalario())
