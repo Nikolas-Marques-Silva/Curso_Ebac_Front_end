@@ -1,0 +1,7 @@
+"use strict";
+const campoNome = document.querySelector('#nome');
+const formularios = document.getElementsByTagName('form');
+const botaoEnviar = document.getElementById('btn-enviar');
+botaoEnviar === null || botaoEnviar === void 0 ? void 0 : botaoEnviar.addEventListener('click', (event) => {
+    event.preventDefault();
+});
