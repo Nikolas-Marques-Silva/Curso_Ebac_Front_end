@@ -20,4 +20,4 @@ npm run build
 
 ### Running the Project with Just index.html
 
-Just open with your favorite app!
+Just open with your favorite browser!
