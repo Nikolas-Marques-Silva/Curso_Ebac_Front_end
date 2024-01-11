@@ -22,8 +22,8 @@
   <h1>{{ nome }}</h1>
   <h1>{{ meuObj.filmeFavorito }}</h1>
   <h1>{{ dizOi() }}</h1>
-  <img v-if="gostaDoN" :src="imagem" alt="">
-  <img v-else-if="gostaDaUzi" :src="imagem" alt="">
+  <img v-if="gostaDoN" :src="imagemDoN" alt="">
+  <img v-else-if="gostaDaUzi" :src="imagemDaUzi" alt="">
   <h2 v-else>Não curte NUzi</h2>
   <button :disabled="botaoEstaDesabilitado">Enviar</button>
 </template>
