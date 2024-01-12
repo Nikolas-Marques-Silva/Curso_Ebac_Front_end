@@ -21,4 +21,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Temos uma imagem especial para você que assisiu murder drones
+- Temos uma imagem especial para você que assistiu murder drones
+
+## [0.0.4] - 2023-01-12
+
+### Added
+
+- Botões para incrementar e decrementar um pequeno número
+- Campo de e-mail, onde o que é escrito fica visível 
