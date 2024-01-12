@@ -36,3 +36,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Campo de visualização do Saldo, Saldo transferido e Saldo restante
 - Campo de preenchimento no qual é calculado e validado automaticamente
+
+## [0.0.6] - 2023-01-12
+
+### Added 
+
+- Lista de nomes adicionável
