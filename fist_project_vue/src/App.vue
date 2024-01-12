@@ -22,6 +22,8 @@ import { reactive } from 'vue';
   const state = reactive({
     contador: 0,
     email: 'a@a.com',
+    saldo: 5000,
+    transferido: 0
   })
 </script>
 
@@ -47,10 +49,25 @@ import { reactive } from 'vue';
 
   {{ state.email }}
   <input type="text" @keyup="event => state.email = event.target.value">
+
+  <br>
+  <hr>
+
+  Saldo: {{ state.saldo }} <br>
+  Transferido: {{ state.transferido }} <br>
+  Saldo atualizado: {{ state.saldo - state.transferido }} <br>
+  <input :class="{'invalid': state.transferido > state.saldo }" @keyup="event => state.transferido = event.target.value" type="number" placeholder="Quantia para transferir">
+  <button v-if="state.transferido <= state.saldo">Transferir</button>
+  <span v-else>Valor maior que o saldo disponível</span>
 </template>
 
 <style scoped>
   img {
     width: 300px;
+  }
+
+  .invalid {
+    outline-color: #f00;
+    border-color: #f00;
   }
 </style>
