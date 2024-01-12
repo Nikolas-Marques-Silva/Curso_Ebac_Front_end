@@ -1,4 +1,6 @@
 <script setup>
+import { reactive } from 'vue';
+
   const nome = "Gian"
   const meuObj = {
     nome: "Gian",
@@ -16,6 +18,11 @@
 
   const gostaDoN = false
   const gostaDaUzi = true
+
+  const state = reactive({
+    contador: 0,
+    email: 'a@a.com',
+  })
 </script>
 
 <template>
@@ -26,6 +33,20 @@
   <img v-else-if="gostaDaUzi" :src="imagemDaUzi" alt="">
   <h2 v-else>Não curte NUzi</h2>
   <button :disabled="botaoEstaDesabilitado">Enviar</button>
+
+  <br>
+  <hr>
+
+  {{ state.contador }}
+
+  <button @click="state.contador++">+</button>
+  <button @click="state.contador--">-</button>
+
+  <br>
+  <hr>
+
+  {{ state.email }}
+  <input type="text" @keyup="event => state.email = event.target.value">
 </template>
 
 <style scoped>
