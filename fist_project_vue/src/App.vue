@@ -55,7 +55,7 @@ import { reactive } from 'vue';
 
   Saldo: {{ state.saldo }} <br>
   Transferido: {{ state.transferido }} <br>
-  Saldo atualizado: {{ state.saldo - state.transferido }} <br>
+  Saldo restante: {{ state.saldo - state.transferido }} <br>
   <input :class="{'invalid': state.transferido > state.saldo }" @keyup="event => state.transferido = event.target.value" type="number" placeholder="Quantia para transferir">
   <button v-if="state.transferido <= state.saldo">Transferir</button>
   <span v-else>Valor maior que o saldo disponível</span>
