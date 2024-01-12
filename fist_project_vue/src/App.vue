@@ -23,8 +23,11 @@ import { reactive } from 'vue';
     contador: 0,
     email: 'a@a.com',
     saldo: 5000,
-    transferido: 0
+    transferido: 0,
+    nomes: ['Gian', 'Vini', 'Cris', 'Ana', 'Lara'],
+    nomeToPush: ''
   })
+
 </script>
 
 <template>
@@ -59,6 +62,16 @@ import { reactive } from 'vue';
   <input :class="{'invalid': state.transferido > state.saldo }" @keyup="event => state.transferido = event.target.value" type="number" placeholder="Quantia para transferir">
   <button v-if="state.transferido <= state.saldo">Transferir</button>
   <span v-else>Valor maior que o saldo disponível</span>
+
+  <br>
+  <hr>
+
+  <ul>
+    <li v-for="nome in state.nomes">{{ nome }}</li>
+  </ul>
+  <input @keyup="event => state.nomeToPush = event.target.value" type="text" placeholder="Digite um novo nome para a lista">
+  <button v-if="state.nomeToPush.length >= 3" @click="state.nomes.push(state.nomeToPush)" type="button">Cadastrar nome</button>
+  <span v-else>Nome deve ter pelo menos 3 caracteres</span>
 </template>
 
 <style scoped>
