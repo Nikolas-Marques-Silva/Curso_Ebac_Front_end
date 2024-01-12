@@ -29,3 +29,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Botões para incrementar e decrementar um pequeno número
 - Campo de e-mail, onde o que é escrito fica visível 
+
+## [0.0.5] - 2023-01-12
+
+### Added
+
+- Campo de visualização do Saldo, Saldo transferido e Saldo restante
+- Campo de preenchimento no qual é calculado e validado automaticamente
