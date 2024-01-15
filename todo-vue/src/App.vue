@@ -1,68 +1,65 @@
-<script setup>
-  import { reactive, computed } from 'vue';
-  import Header from './components/Header.vue';
-  import Formulario from './components/Formulario.vue';
-  import Lista from './components/Lista.vue';
-
-  const state = reactive({
-    tasks: [
-      {
-        title: 'Estudar ES6',
-        done: false
-      },
-      {
-        title: 'Estudar Vue',
-        done: false  
-      },
-      {
-        title: 'Estudar React',
-        done: false
-      }
-    ],
-    filter: 'todas',
-    tempTask: ''
-  })
-
-  const getPendentTasks = computed(() => {
-    return state.tasks.filter((task) => !task.done)
-  })
-
-  const getFinalizedTasks = computed(() => {
-    return state.tasks.filter((task) => task.done)
-  })
-
-  const getFilteredTasks = computed(() => {
-    const { filter } = state
-
-    switch (filter) {
-      case 'pendentes':
-        return getPendentTasks.value
-      case 'finalizadas':
-        return getFinalizedTasks.value
-      default:
-        return state.tasks
-    }
-  })
-
-  const registerTask = () => {
-    const newTask = {
-      title: state.tempTask,
-      done: false
-    }
-    
-    state.tasks.push(newTask)
-    state.tempTask = ''
-  }
-</script>
-
+<!-- App.vue -->
 <template>
-  <div class="container">
-    <Header :pendentsTasks="getPendentTasks.length" />
-    <Formulario :tempTask="state.tempTask" :registerTask="registerTask" :changeFilter="event => state.filter = event.target.value" :changeTempTask="event => state.tempTask = event.target.value" />
-    <Lista :filteredTasks="getFilteredTasks" />
+  <div class="calculator container">
+    <div class="row">
+      <div class="col">
+        <header class="mt-5">
+          <h1>Calculadora VueJS</h1>
+          <p>Usando VueJS</p>
+          <hr>
+        </header>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+        <input class="text-center form-control" v-model="num1" type="number" placeholder="Digite o primeiro número">
+      </div>
+      <div class="col-md-2">
+        <select class="text-center form-control" v-model="operation">
+      <option value="add">+</option>
+      <option value="subtract">-</option>
+      <option value="multiply">*</option>
+      <option value="divide">/</option>
+    </select>
+      </div>
+      <div class="col-md-5">
+        <input class="text-center form-control" v-model="num2" type="number" placeholder="Digite o segundo número">
+      </div>
+    </div>
+    <p class="text-center resultado">{{ result }}</p>
   </div>
 </template>
 
-<style scoped>
+<script>
+export default {
+  data() {
+    return {
+      num1: '',
+      num2: '',
+      operation: 'add',
+    };
+  },
+  computed: {
+    result() {
+      switch (this.operation) {
+        case 'add':
+          return this.num1 + this.num2;
+        case 'subtract':
+          return this.num1 - this.num2;
+        case 'multiply':
+          return this.num1 * this.num2;
+        case 'divide':
+          return this.num1 / this.num2;
+        default:
+          return 'Operação inválida';
+      }
+    },
+  },
+};
+</script>
 
+<style scoped>
+.resultado {
+  font-size: 160px;
+}
 </style>
