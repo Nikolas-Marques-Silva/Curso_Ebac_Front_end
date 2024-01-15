@@ -1,5 +1,5 @@
 {
-  "name": "fist_project_vue",
+  "name": "todo-vue",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bootstrap": "^5.3.2",
     "vue": "^3.3.11"
   },
   "devDependencies": {
