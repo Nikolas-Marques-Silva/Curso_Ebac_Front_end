@@ -1,15 +1,10 @@
 import './perfil.css'
 
-export default () => {
-    const user = {
-        name: 'Níkolas',
-        avatar: 'https://github.com/nikolas-marques-silva.png'
-    }
-
-    return (
+export default ({avatar, name}) => {
+ return (
         <div>
-            <img className="perfil-avatar" src={user.avatar} alt="" />
-            <h3 className='perfil-title'>{user.name}</h3>
+            <img className="perfil-avatar" src={avatar} alt="" />
+            <h3 className='perfil-title'>{name}</h3>
         </div>
     )
 }
