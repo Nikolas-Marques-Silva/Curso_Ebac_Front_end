@@ -1,11 +1,29 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default () => {
-    let [materiaA, setMateriaA] = useState(0);
-    let [materiaB, setMateriaB] = useState(0);
-    let [materiaC, setMateriaC] = useState(0);
+    const [materiaA, setMateriaA] = useState(0);
+    const [materiaB, setMateriaB] = useState(0);
+    const [materiaC, setMateriaC] = useState(0);
 
-    let [nome, setNome] = useState(0);
+    const [nome, setNome] = useState(0);
+
+    useEffect(() => {
+        console.log("Montado");
+
+        return () => {
+            console.log("Desmontado");
+        }
+    }, []);
+
+    useEffect(() => {
+        console.log("materiaA: ", materiaA);
+        console.log("materiaB: ", materiaB);
+        console.log("materiaC: ", materiaC);
+    }, [materiaA, materiaB, materiaC]);
+
+    useEffect(() => {
+        console.log("nome: ", nome);
+    }, [nome]);
 
     const changeNome = (e) => {
         setNome(EstadoAnterior => e.target.value);
