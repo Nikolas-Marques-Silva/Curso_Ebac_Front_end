@@ -40,6 +40,7 @@ export default () => {
 
     return (
         <form>
+
             <input type="text" name="" id="" placeholder="Seu nome" onChange={changeNome} />
             <input type="number" placeholder="Nota matéria A" name="" id="" onChange={e => setMateriaA(parseInt(e.target.value))}/>
             <input type="number" placeholder="Nota matéria B" name="" id="" onChange={e => setMateriaB(parseInt(e.target.value))} />
