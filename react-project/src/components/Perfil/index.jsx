@@ -1,10 +1,10 @@
-import './perfil.css'
+import styles from './Perfil.module.css'
 
-export default ({avatar, name}) => {
+export default ({ nomeUsuario }) => {
  return (
-        <div>
-            <img className="perfil-avatar" src={avatar} alt="" />
-            <h3 className='perfil-title'>{name}</h3>
-        </div>
+        <header className={styles.header}>
+            <img className={styles.avatar} src={`https://github.com/${nomeUsuario}.png`} alt="" />
+            <h1 className={styles.name}>{nomeUsuario}</h1>
+        </header>
     )
 }

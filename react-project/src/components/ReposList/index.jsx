@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 
-export default () => {
+import styles from "./ReposList.module.css";
+
+export default ({ nomeUsuario }) => {
   const [repos, setRepos] = useState([]);
   const [estaCarregando, setEstaCarregando] = useState(true);
 
   useEffect(() => {
-    fetch("https://api.github.com/users/nikolas-marques-silva/repos")
+    setEstaCarregando(true);
+    fetch(`https://api.github.com/users/${nomeUsuario}/repos`)
       .then((response) => response.json())
       .then((responseJson) =>
         setTimeout(() => {
@@ -13,26 +16,31 @@ export default () => {
           setEstaCarregando(false);
         }, 1000)
       );
-  }, []);
+  }, [nomeUsuario]);
 
   return (
-    <>
-      {estaCarregando && <h1>Carregando...</h1>}
-      <ul>
+    <div className="container">
+      {estaCarregando ?
+      (<h1>Carregando...</h1>)
+    : (
+      <ul className={styles.list}>
         {repos.map(({ id, name, html_url, language }) => (
           <>
-            <li key={id}>
-              <b>Nome:</b> {name} <br />
-              <b>Linguagem:</b> {language} <br />
-              <a target="_blank" href={html_url}>
+            <li key={id} className={styles.listItem}>
+              <div className={styles.listItemName}>
+                <b>Nome:</b> {name}
+              </div>
+              <div className={styles.listItemLanguage}>
+                <b>Linguagem:</b> {language}
+              </div>
+              <a className={styles.listItemLink} target="_blank" href={html_url}>
                 Visite o repositório
               </a>{" "}
-              <br />
-              <hr />
             </li>
           </>
         ))}
       </ul>
-    </>
+    )}
+    </ div>
   );
 };

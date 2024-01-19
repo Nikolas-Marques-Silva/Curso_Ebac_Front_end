@@ -1,24 +1,35 @@
-import { useState } from "react"
+import { useState } from "react";
 
-import Pelfil from "./components/Perfil"
-import Formulario from "./components/Formulario"
-import ReposList from "./components/ReposList"
+import Pelfil from "./components/Perfil";
+import Formulario from "./components/Formulario";
+import ReposList from "./components/ReposList";
 
 function App() {
-  const [formularioEstaVisivel, setFormularioEstaVisivel] = useState(true)
+  const [formularioEstaVisivel, setFormularioEstaVisivel] = useState(false);
+  const [nomeUsuario, setNomeUsuario] = useState("");
 
- return (
+  return (
     <>
-      <Pelfil name="Níkolas" avatar="https://github.com/nikolas-marques-silva.png" />
+      <input
+        onBlur={(e) => setNomeUsuario(e.target.value)}
+        type="text"
+        name=""
+        id=""
+      />
 
-      <ReposList />
-
-      {formularioEstaVisivel && (
-        <Formulario />
+      {nomeUsuario.length > 4 && (
+        <>
+          <Pelfil nomeUsuario={nomeUsuario} />
+          <ReposList nomeUsuario={nomeUsuario} />
+        </>
       )}
-      <button onClick={() => setFormularioEstaVisivel(!formularioEstaVisivel)}>toggle Formulário</button>
+
+      {formularioEstaVisivel && <Formulario />}
+      <button hidden={true} onClick={() => setFormularioEstaVisivel(!formularioEstaVisivel)}>
+        toggle Formulário
+      </button>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
