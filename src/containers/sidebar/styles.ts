@@ -9,10 +9,10 @@ export const Description = styled(P)`
 export const ThemeButton = styled.button`
   border-radius: 12px;
   font-size: 10;
-  color: #eee;
+  color: ${(props) => props.theme.bgColor};
   padding: 8px;
   font-weight: bold;
-  background-color: #282a35;
+  background-color: ${(props) => props.theme.primaryColor};
   cursor: pointer;
 `
 
@@ -20,4 +20,9 @@ export const SidebarContainer = styled.div`
   position: sticky;
   left: 0;
   top: 80px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+    text-align: center;
+  }
 `
