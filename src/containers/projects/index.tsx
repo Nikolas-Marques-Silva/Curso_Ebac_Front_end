@@ -3,7 +3,7 @@ import Title from '../../components/title'
 const Projects = () => {
   return (
     <section>
-      <Title>Projetos</Title>
+      <Title fontSize={16}>Projetos</Title>
     </section>
   )
 }

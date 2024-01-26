@@ -5,7 +5,7 @@ const EstilosGlobais = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
   }
 
   body {
